@@ -6,7 +6,7 @@ import json
 st.set_page_config(page_title="RZ Creative Shop - Pro SEO & WooCommerce", layout="wide")
 
 st.title("🚀 RZ Creative Shop: Professional WooCommerce Studio")
-st.markdown("Powered by **Groq AI (Llama-3.1-70b)** & **WooCommerce REST API**")
+st.markdown("Powered by **Groq AI (Llama-3.1-8b)** & **WooCommerce REST API**")
 
 # Sidebar Configuration
 st.sidebar.header("🔑 API Credentials")
@@ -43,7 +43,7 @@ with tab1:
                 """
                 with st.spinner("Generating with Groq AI..."):
                     res = client.chat.completions.create(
-                        model="llama-3.1-70b-versatile",
+                        model="llama-3.1-8b-instant",
                         messages=[{"role": "user", "content": prompt}],
                         temperature=0.7,
                     )
